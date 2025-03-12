@@ -15,7 +15,7 @@ body {
 
 .header-links {
   font-weight: bold;
-  font-size: calc(8px + 1vw);
+  font-size: calc(5px + 1vw);
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 12vw;
@@ -98,9 +98,9 @@ body {
 }
 
 .left {
-  padding-top: 150px;
+  padding-top: 130px;
   overflow-y: scroll;
-  height: 75vh;
+  height: 80vh;
   padding-right: 40px;
 }
 
@@ -111,7 +111,7 @@ h3 {
 }
 
 h2 {
-  padding-top: 20px;
+  padding-top: 10px;
   font-family: Arial Blck;
   color: #46164a;
   scroll-margin-top: calc(120px);
@@ -192,15 +192,19 @@ li {
   font-size: calc(10px + 0.5vw);
 }
 
-.about-dropdown {
+.about-dropdown,
+.rules-dropdown,
+.licenses-dropdown,
+.other-dropdown {
   display: none;
   position: absolute;
   flex-direction: column;
   z-index: 3;
-  height: 10vh;
   background-color: #f4eef4;
-  padding: 30px;
+  padding: 25px;
   border-radius: 20px;
+  text-align: left;
+  line-height: 200%;
 }
 
 .about-btn:hover .about-dropdown {
@@ -213,4 +217,49 @@ li {
 
 .about-dropdown:hover {
   display: flex;
+}
+
+.rules-btn:hover .rules-dropdown {
+  display: flex;
+}
+
+.rules-btn:focus .rules-dropdown {
+  display: flex;
+}
+
+.rules-dropdown:hover {
+  display: flex;
+}
+
+.licenses-btn:hover .licenses-dropdown {
+  display: flex;
+}
+
+.licenses-btn:focus .licenses-dropdown {
+  display: flex;
+}
+
+.licenses-dropdown:hover {
+  display: flex;
+}
+
+.other-btn:hover .other-dropdown {
+  display: flex;
+}
+
+.other-btn:focus .other-dropdown {
+  display: flex;
+}
+
+.other-dropdown:hover {
+  display: flex;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-link:hover {
+  color: #5b295f;
 }
