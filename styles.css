@@ -100,7 +100,7 @@ body {
 .left {
   padding-top: 150px;
   overflow-y: scroll;
-  padding-bottom: 40px;
+  height: 75vh;
   padding-right: 40px;
 }
 
@@ -190,4 +190,27 @@ li {
 .bubble-list {
   padding-left: 4vw;
   font-size: calc(10px + 0.5vw);
+}
+
+.about-dropdown {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  z-index: 3;
+  height: 10vh;
+  background-color: #f4eef4;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.about-btn:hover .about-dropdown {
+  display: flex;
+}
+
+.about-btn:focus .about-dropdown {
+  display: flex;
+}
+
+.about-dropdown:hover {
+  display: flex;
 }
