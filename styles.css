@@ -15,10 +15,10 @@ body {
 
 .header-links {
   font-weight: bold;
-  font-size: calc(5px + 1vw);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 12vw;
+  font-size: calc(3px + 1vw);
+  padding-top: 35px;
+  padding-bottom: 30px;
+  padding-left: 12.5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -51,11 +51,19 @@ body {
 }
 
 .header-link,
+.about-header-link,
+.rules-header-link,
+.licenses-header-link,
+.other-header-link,
 .search-header-link {
   text-decoration: none;
   color: white;
 }
 
+.about-header-link:hover,
+.rules-header-link:hover,
+.licenses-header-link:hover,
+.other-header-link:hover,
 .header-link:hover {
   color: #e0b8e0;
 }
@@ -98,23 +106,25 @@ body {
 }
 
 .left {
-  padding-top: 130px;
+  padding-top: 110px;
   overflow-y: scroll;
-  height: 80vh;
+  height: 84vh;
   padding-right: 40px;
 }
 
 h1,
 h3 {
   font-family: Arial Blck;
+  font-size: xx-large;
   scroll-margin-top: calc(180px);
 }
 
 h2 {
   padding-top: 10px;
+  margin-bottom: 0px;
   font-family: Arial Blck;
   color: #46164a;
-  scroll-margin-top: calc(120px);
+  scroll-margin-top: calc(110px);
 }
 
 p,
@@ -150,7 +160,7 @@ li {
 }
 
 .right {
-  padding-top: 140px;
+  padding-top: 130px;
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
@@ -207,51 +217,23 @@ li {
   line-height: 200%;
 }
 
-.about-btn:hover .about-dropdown {
+.about-btn:hover .about-dropdown,
+.about-btn:focus-within .about-dropdown {
   display: flex;
 }
 
-.about-btn:focus .about-dropdown {
+.rules-btn:hover .rules-dropdown,
+.rules-btn:focus-within .rules-dropdown {
   display: flex;
 }
 
-.about-dropdown:hover {
+.licenses-btn:hover .licenses-dropdown,
+.licenses-btn:focus-within .licenses-dropdown {
   display: flex;
 }
 
-.rules-btn:hover .rules-dropdown {
-  display: flex;
-}
-
-.rules-btn:focus .rules-dropdown {
-  display: flex;
-}
-
-.rules-dropdown:hover {
-  display: flex;
-}
-
-.licenses-btn:hover .licenses-dropdown {
-  display: flex;
-}
-
-.licenses-btn:focus .licenses-dropdown {
-  display: flex;
-}
-
-.licenses-dropdown:hover {
-  display: flex;
-}
-
-.other-btn:hover .other-dropdown {
-  display: flex;
-}
-
-.other-btn:focus .other-dropdown {
-  display: flex;
-}
-
-.other-dropdown:hover {
+.other-btn:hover .other-dropdown,
+.other-btn:focus-within .other-dropdown {
   display: flex;
 }
 
