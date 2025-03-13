@@ -113,8 +113,11 @@ body {
 h1,
 h3 {
   font-family: Arial Blck;
-  font-size: xx-large;
   scroll-margin-top: calc(180px);
+}
+
+h1 {
+  font-size: 1.7em;
 }
 
 h2 {
@@ -123,6 +126,7 @@ h2 {
   font-family: Arial Blck;
   color: #46164a;
   scroll-margin-top: calc(110px);
+  font-size: 1.3em;
 }
 
 p,
@@ -180,7 +184,7 @@ li {
   background-color: #f4eef4;
   border-radius: 20px;
   width: 82%;
-  height: calc(73vh - 10vw);
+  height: calc(73vh - 10vw - 2vh);
   overflow-y: scroll;
 }
 
@@ -192,12 +196,12 @@ li {
 
 .bubble-header {
   padding-left: 2.5vw;
-  font-size: calc(8px + 1vw);
+  font-size: calc(7px + 1vw);
 }
 
 .bubble-list {
   padding-left: 4vw;
-  font-size: calc(4px + 0.4vw + 1vh);
+  font-size: calc(2.5px + 0.4vw + 1vh);
 }
 
 .about-dropdown,
