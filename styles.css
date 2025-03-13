@@ -36,18 +36,18 @@ body {
 .header-logo {
   background-color: white;
   border: 4px solid white;
-  border-radius: 100px;
+  border-radius: 200px;
   z-index: 2;
   position: fixed;
   margin-left: 2vw;
   margin-top: calc(110px - 5vw);
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
 }
 
 .logo {
-  width: 10vw;
-  height: 10vw;
+  width: 9vw;
+  height: 9vw;
 }
 
 .header-link,
@@ -77,24 +77,22 @@ body {
   background-color: gray;
   border: 4px solid gray;
   border-radius: 100px;
-  width: 20px;
-  height: 20px;
+  width: 1.5vw;
+  height: 1.5vw;
   margin-left: 20px;
+  display: flex;
 }
 
 .magglass:hover {
   background-color: rgb(110, 110, 110);
   border: 4px solid rgb(110, 110, 110);
-  border-radius: 100px;
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
 }
 
 .glass {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  flex-grow: 1;
 }
 
 .content {
@@ -199,7 +197,7 @@ li {
 
 .bubble-list {
   padding-left: 4vw;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(4px + 0.4vw + 1vh);
 }
 
 .about-dropdown,
@@ -244,4 +242,50 @@ li {
 
 .dropdown-link:hover {
   color: #5b295f;
+}
+
+/* TABLET / PHONE */
+
+@media only screen and (max-width: 800px) {
+  .header {
+    display: none;
+  }
+}
+
+/* LARGE SCREEN */
+@media only screen and (min-width: 1800px) {
+  .header-logo {
+    margin-top: calc(30px + 1vw);
+    width: 7vw;
+    height: 7vw;
+  }
+  .logo {
+    width: 7vw;
+    height: 7vw;
+  }
+  .header-links {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  .left {
+    padding-top: 170px;
+  }
+  .right {
+    padding-top: 200px;
+  }
+  .bubble {
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.3em;
+  }
 }
