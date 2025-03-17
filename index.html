@@ -7,10 +7,73 @@
   </head>
   <body>
     <div class="info-modal" id="info-modal">
-      <p>Hello</p>
+      <img
+        src="public/ex.png"
+        alt="Escape Button"
+        class="info-ex"
+        id="info-ex"
+      />
+      <div class="info-txt">
+        <h1>Functions of the Board of Dental Examiners</h1>
+        <ul>
+          <li>
+            The administration of licensure examinations for dentists and dental
+            hygienists.
+          </li>
+          <li>
+            The promulgation of rules and enforcement of laws and regulations
+            governing the practice of dentistry and dental hygiene in this
+            state.
+          </li>
+          <li>
+            The issuance and renewal of licenses to dentists and dental
+            hygienists.
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="burger-modal" id="burger-modal">
-      <p>Hi</p>
+      <img
+        src="public/ex.png"
+        alt="Escape Button"
+        class="burger-ex"
+        id="burger-ex"
+      />
+      <div class="burger-txt">
+        <a href="#home" class="bigsmall">Home</a>
+        <div class="big">
+          About
+          <a href="#" class="small">FAQs</a>
+          <a href="#" class="small">Forms</a>
+          <a href="#" class="small">What's New</a>
+          <a href="#" class="small">Publications</a>
+          <a href="#" class="small">Board Newsletter</a>
+        </div>
+        <div class="big">
+          Rules & Laws
+          <a href="#" class="small">General Statutes</a>
+          <a href="#" class="small">Board Rules</a>
+          <a href="#" class="small">Filing Complaints</a>
+          <a href="#" class="small">CBC Requirements</a>
+        </div>
+        <div class="big">
+          Licenses & Permits
+          <a href="#" class="small">License Renewal</a>
+          <a href="#" class="small">Online Examinations</a>
+          <a href="#" class="small">Dental Application</a>
+          <a href="#" class="small">Dental Hygiene Application</a>
+          <a href="#" class="small">Intern Permit</a>
+          <a href="#" class="small">Anesthesia/Sedation Permits</a>
+        </div>
+        <div class="big">
+          Other
+          <a href="#" class="small">Fees</a>
+          <a href="#" class="small">Online Services</a>
+          <a href="#" class="small">Continuing Education</a>
+          <a href="#" class="small">Disciplinary Action</a>
+        </div>
+        <a href="#" class="bigsmall">Contact Us</a>
+      </div>
     </div>
     <div class="header-logo">
       <a href="#home">
@@ -329,24 +392,38 @@
       var infoBtn = document.getElementById("info-btn");
       var burgBtn = document.getElementById("burger-btn");
 
-      // Get the <span> element that closes the modal
-      //   var span = document.getElementsByClassName("close")[0];
+      // Get the x's that closes the modal
+      var infoEx = document.getElementById("info-ex");
+      var burgerEx = document.getElementById("burger-ex");
 
       // When the user clicks the button, open the modal
       infoBtn.onclick = function () {
-        console.log("open");
         infoModal.style.display = "block";
       };
       burgBtn.onclick = function () {
-        console.log("open");
         burgModal.style.display = "block";
       };
 
-      // When the user clicks on <span> (x), close the modal
-      //   span.onclick = function () {
-      //     console.log("open");
-      //     infoModal.style.display = "none";
-      //   };
+      // When the user clicks on x, close the modal
+      infoEx.onclick = function () {
+        infoModal.style.display = "none";
+      };
+      burgerEx.onclick = function () {
+        burgModal.style.display = "none";
+      };
+
+      // Automatically close modals on screen resize
+      function handleResize() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth > 800) {
+          infoModal.style.display = "none";
+          burgModal.style.display = "none";
+        }
+      }
+
+      // Event listener for window resize
+      window.addEventListener("resize", handleResize);
     </script>
   </body>
 </html>
