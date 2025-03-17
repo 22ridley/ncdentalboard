@@ -385,7 +385,7 @@ input {
   }
   .search-header-link {
     margin-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 3vh;
     width: 50vw;
   }
   input {
