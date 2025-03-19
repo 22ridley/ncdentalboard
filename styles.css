@@ -199,9 +199,9 @@ li {
   background-color: #f4eef4;
   border-radius: 20px;
   width: 82%;
-  height: calc(73vh - 10vw - 5vh);
+  max-height: calc(73vh - 10vw - 5vh);
   overflow-y: scroll;
-  margin-bottom: 20px;
+  padding-bottom: 3vh;
 }
 
 .bubble-text {
