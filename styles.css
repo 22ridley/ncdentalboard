@@ -166,6 +166,10 @@ li {
   padding-top: 10px;
 }
 
+.toc-link:hover {
+  color: #723f76;
+}
+
 .bar {
   border-left: 2px solid rgb(154, 154, 154);
   overflow-y: hidden;
@@ -257,7 +261,7 @@ li {
 }
 
 .dropdown-link:hover {
-  color: #5b295f;
+  color: #723f76;
 }
 
 .mob-header {
